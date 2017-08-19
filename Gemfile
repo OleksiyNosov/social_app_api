@@ -10,9 +10,18 @@ gem 'rails'
 gem 'pg'
 gem 'puma'
 gem 'bcrypt'
+gem 'draper'
+gem 'email_validator'
 
 group :development, :test do
   gem 'rspec-rails'
+end
+
+group :test do
+  gem 'rails-controller-testing'
+  gem 'rspec-activemodel-mocks'
+  gem 'rspec-its'
+  gem 'shoulda-matchers'
 end
 
 group :development do
