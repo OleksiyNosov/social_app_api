@@ -9,5 +9,5 @@ class User < ApplicationRecord
 
   validates :email, presence: true, uniqueness: { case_sensitive: false }, email: true
 
-  validates_attachemnt_content_type :avatar, content_type: /\.(png|jpg|jpeg|gif)$/
+  validates_attachment_content_type :avatar, content_type: /\.(png|jpg|jpeg|gif)$/
 end

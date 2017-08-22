@@ -3,6 +3,6 @@ class UserDecorator < ApplicationDecorator
 
   private
   def _only
-    %I[id email first_name last_name sex]
+    %I[id email first_name last_name sex lat lng birthday]
   end
 end
